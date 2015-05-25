@@ -17,33 +17,112 @@
     <div data-role="header">index head</div>
     <div role="main" class="ui-content">content
         <p>I'm first in the source order so I'm shown as the page.</p>
+
         <p>View internal page called <a href="#bar">bar</a></p></div>
 
 
     <div data-role="footer">foot
         <p>I'm first in the source order so I'm shown as the page.</p>
+
         <p>View internal page called <a href="#bar">go to bar</a></p></div>
 </div>
 
 <div data-role="page" id="bar">
     <div
-        data-role="header">
+            data-role="header">
         <h1>1111</h1>
-        </div>
-    <div data-role="main" class="ui-content">
-        <p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
-        <p><a href="#foo">back to foo</a></p>
-        <p><a href="TwoPage.html" class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-transition="pop">pop open the dialog</a></p>
-        <p><a href="TwoPage.html" class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-transition="slidedown">slidedown open the dialog</a></p>
-        <p><a href="TwoPage.html" class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-transition="flip">flip open the dialog</a></p>
-    <p><a href="#popupBasic" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Basic Popup</a>
-      </p>
-        <p><a href="#popupBasic2" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Basic Popup2</a>
-        </p>
-        <p>A paragraph with a tooltip. <a href="#popupInfo" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Learn more">Learn more</a></p>
-
     </div>
-<div data-role="footer">
+    <div data-role="main" class="ui-content">
+        <p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that
+            references my id is beeing clicked.</p>
+
+        <p><a href="#foo">back to foo</a></p>
+
+        <p><a href="TwoPage.html" data-rel="dialog" class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-transition="pop">pop open
+            the dialog</a></p>
+
+        <p><a href="TwoPage.html" class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-transition="slidedown">slidedown
+            open the dialog</a></p>
+
+        <p><a href="TwoPage.html" class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-transition="flip">flip open
+            the dialog</a></p>
+
+        <p><a href="#popupBasic" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"
+              data-transition="pop">Basic Popup</a>
+        </p>
+
+        <p><a href="#popupBasic2" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"
+              data-transition="pop">Basic Popup2</a>
+        </p>
+
+        <p>A paragraph with a tooltip. <a href="#popupInfo" data-rel="popup" data-transition="pop"
+                                          class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext"
+                                          title="Learn more">Learn more</a></p>
+
+        <form>
+                <input data-type="search" id="searchForCollapsibleSet">
+        </form>
+            
+        <div data-role="collapsibleset" data-filter="true" data-inset="true" id="collapsiblesetForFilter"
+             data-input="#searchForCollapsibleSet">
+                    
+            <div data-role="collapsible" data-filtertext="Animals">
+                            <h3>Animals</h3>
+                            
+                <ul data-role="listview" data-inset="false">
+                                    
+                    <li>Cats</li>
+                                    
+                    <li>Dogs</li>
+                                    
+                    <li>Lizards</li>
+                                    
+                    <li>Snakes</li>
+                                
+                </ul>
+                        
+            </div>
+                    
+            <div data-role="collapsible" data-filtertext="Cars">
+                            <h3>Cars</h3>
+                            
+                <ul data-role="listview" data-inset="false">
+                                    
+                    <li>Acura</li>
+                                    
+                    <li>Audi</li>
+                                    
+                    <li>BMW</li>
+                                    
+                    <li>Cadillac</li>
+                                
+                </ul>
+                        
+            </div>
+                    
+            <div data-role="collapsible" data-filtertext="Planets">
+                            <h3>Planets</h3>
+                            
+                <ul data-role="listview" data-inset="false">
+                                    
+                    <li>Earth</li>
+                                    
+                    <li>Jupiter</li>
+                                    
+                    <li>Mars</li>
+                                    
+                    <li>Mercury</li>
+                                
+                </ul>
+                        
+            </div>
+                
+        </div>
+    </div>
+    <div data-role="footer">
+
+        <h4>pager footer</h4>
+    </div>
     <div data-role="popup" id="popupBasic">
         <p>This is a completely basic popup, no options set.</p>
     </div>
@@ -51,10 +130,9 @@
         <p>This is a completely basic popup, no options set.</p>
     </div>
     <div data-role="popup" id="popupInfo" class="ui-content" data-theme="a" style="max-width:350px;">
-          <p>Here is a <strong>tiny popup</strong> being used like a tooltip. The text will wrap to multiple lines as needed.</p>
+          <p>Here is a <strong>tiny popup</strong> being used like a tooltip. The text will wrap to multiple lines as
+        needed.</p>
     </div>
-    <h4>pager footer</h4>
-</div>
 </div>
 </body>
 </html>
