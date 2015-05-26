@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+</head>
+<body>
+
+<div data-role="page" id="foo">
+    <div data-role="header">index head</div>
+    <div role="main" class="ui-content">content
+        <form>
+                 <label for="text-1">Text input:</label>
+                 <input type="text" name="text-1" id="text-1" value="">
+                 <label for="text-3">Text input: data-clear-btn="true"</label>
+                 <input type="text" data-clear-btn="true" name="text-3" id="text-3" value="">
+        </form>
+        <form>
+                 <label for="date-1">Date: data-clear-btn="false"</label>
+                 <input type="date" data-clear-btn="false" name="date-1" id="date-1" value="">
+                 <label for="date-2">Date: data-clear-btn="true"</label>
+                 <input type="date" data-clear-btn="true" name="date-2" id="date-2" value="">
+        </form>
+
+        <form>
+                
+            <div class="ui-field-contain">
+                         <label for="text-14">Text input:</label>
+                         <input type="text" data-mini="true" name="text-14" id="text-14" value="">
+                    
+            </div>
+                
+            <div class="ui-field-contain">
+                         <label for="text-15">Text input: data-clear-btn="true"</label>
+                         <input type="text" data-clear-btn="true" data-mini="true" name="text-15" id="text-15" value="">
+                    
+            </div>
+                
+            <div class="ui-field-contain">
+                     <label for="search-9">Search:</label>
+                     <input type="search" data-mini="true" name="search-9" id="search-9" value="">
+                    
+            </div>
+                
+            <div class="ui-field-contain">
+                    <label for="textarea-14">Textarea:</label>
+                    <textarea data-mini="true" cols="40" rows="8" name="textarea-14" id="textarea-14"></textarea>
+                    
+            </div>
+        </form>
+         <label for="slider-fill-mini">Slider with fill, mini, track theme:</label>
+        <input type="range" name="slider-fill-mini" id="slider-fill-mini" value="40" min="0" max="100" data-mini="true" data-highlight="true" data-theme="b" data-track-theme="b">
+    </div>
+    <div data-role="footer"> footer</div>
+     
+</div>
+</body>
+</html>
